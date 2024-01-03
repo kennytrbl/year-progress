@@ -1,22 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Year Progress</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="icon" type="image/x-icon" href="hourglass.svg" />
-    </head>
-    <body>
-        <div class="flex flex-col items-center justify-center h-screen m-0 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl bg-[#526D82] text-[#DDE6ED]">
-            <p id="countdown"></p>
-            <p id="progress" class="mt-10"></p>
-            <p id="next-percentage" class="mt-10"></p>
-            <div class="w-2/4 h-8 mb-4 bg-[#27374D] mt-10">
-                <div id="progress-bar" class="h-8 bg-[#9DB2BF]" style="width: 100%"></div>
-            </div>
-            <p id="footer" class="text-xl"></p>
-        </div>
-    </body>
-    <script src="script.js" async></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Year Progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="hourglass.svg" />
+  </head>
+  <body>
+    <div
+      class="m-0 flex h-screen flex-col items-center justify-center bg-[#526D82] text-[#DDE6ED] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+    >
+      <p id="countdown"></p>
+      <p id="progress" class="mt-10"></p>
+      <p id="next-percentage" class="mt-10"></p>
+      <div class="mb-4 mt-10 h-8 w-2/4 bg-[#27374D]">
+        <div id="progress-bar" class="h-8 bg-[#9DB2BF]" style="width: 100%"></div>
+      </div>
+      <p id="footer" class="text-xl"></p>
+    </div>
+  </body>
+  <script src="script.js" async></script>
 </html>
