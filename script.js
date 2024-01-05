@@ -59,4 +59,4 @@ var x = setInterval(function () {
 }, 100);
 
 document.getElementById("footer").innerHTML =
-  `a creation by <a class="underline hover:text-[#9DB2BF]" href="https://github.com/kennytrbl">Kenny Zhang</a>, © ${currentYear}`;
+  `a creation by <a class="underline hover:text-[#9DB2BF]" href="https://github.com/kennytrbl" target="_blank">Kenny Zhang</a>, © ${currentYear}`;
