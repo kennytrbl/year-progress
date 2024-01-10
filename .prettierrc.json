@@ -1,6 +1,6 @@
-{ 
-    "plugins": ["prettier-plugin-tailwindcss"], 
-    "printWidth": 120, 
-    "tabWidth": 2,
-    "quoteProps": "preserve"
+{
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "printWidth": 120,
+  "tabWidth": 2,
+  "quoteProps": "preserve"
 }

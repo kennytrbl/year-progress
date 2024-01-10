@@ -56,11 +56,6 @@ var x = setInterval(function () {
     clearInterval(x);
     document.getElementsByTagName("BODY")[0].style.display = "none";
   }
-
-  // update current time
-  document.getElementById("current-time").innerHTML = `${new Date().toLocaleString("en-US", {
-    timeZone: "America/Los_Angeles",
-  })}`;
 }, 100);
 
 document.getElementById("footer").innerHTML =
