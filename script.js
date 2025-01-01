@@ -17,9 +17,17 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // display the result
+  // helper function for singular/plural grammar
+  function formatUnit(value, unit) {
+    return `${value} ${unit}${value === 1 ? "" : "s"}`;
+  }
+
+  // display the result with proper grammar
   document.getElementById("countdown").innerHTML =
-    `There are ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds left in ${currentYear}.`;
+    `There ${days === 1 && hours === 0 && minutes === 0 && seconds === 0 ? "is" : "are"} ` +
+    `${formatUnit(days, "day")}, ${formatUnit(hours, "hour")}, ${formatUnit(minutes, "minute")}, ` +
+    `and ${formatUnit(seconds, "second")} left in ${currentYear}.`;
+    
   document.getElementById("progress").innerHTML = `${currentYear} is ${yearCompletion.toFixed(6)}% complete.`;
 
   // calculate next percentage
@@ -45,7 +53,7 @@ var x = setInterval(function () {
 
   // display the result
   var nextPercentage = calculateNextPercentage(secondsOfYear, secondsElapsed);
-  document.getElementById("next-percentage").innerHTML = `2024 will be ${`${nextPercentage[0]}%`} complete on ${
+  document.getElementById("next-percentage").innerHTML = `${currentYear} will be ${`${nextPercentage[0]}%`} complete on ${
     nextPercentage[1]
   }.`;
 
