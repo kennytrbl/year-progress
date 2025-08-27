@@ -5,3 +5,7 @@ Inspired by the account on Twitter @year_progress, I recreated the year progres
 ## Tech Stack
 
 HTML, Javascript
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
